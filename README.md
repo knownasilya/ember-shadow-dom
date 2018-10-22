@@ -1,51 +1,74 @@
 ember-shadow-dom
-==============================================================================
+================
 
-[Short description of the addon.]
+Write templates for your components inside of a Shadow DOM root.
+Allows encapsulating styles (CSS) and markup (HTML) but using templates like
+you're used to.
 
 Installation
-------------------------------------------------------------------------------
+------------
 
-```
+```sh
 ember install ember-shadow-dom
 ```
 
-
 Usage
-------------------------------------------------------------------------------
+-----
 
-[Longer description of how to use the addon in apps.]
+This addon provdes a component called `ShadowDom` (or `shadow-dom` if not using angle brackets)
 
+```hbs
+<ShadowDom @el={{this.element}}>
+  <style>
+    .internal {
+      color: red;
+    }
+  </style>
+
+  <span class='internal'>Internal</span>
+</ShadowDom>
+```
+
+This mode makes the encapsulating component's children a shadow root, meaning
+it does not support having any elements outside of the `ShadowDom` component block.
+
+To mix shadow and normal templates, you need to use the `@selector` attribute.
+
+```hbs
+<div id='internal'></div>
+Outside of the shadow dom
+
+<ShadowDom @selector='#internal'>
+  <style>
+    .internal {
+      color: red;
+    }
+  </style>
+
+  <span class='internal'>Internal</span>
+</ShadowDom>
+```
+
+API
+---
+
+### `ShadowDom` (`shadow-dom`)
+
+#### Attributes
+
+- `@selector` (string) - selector used by `document.querySelector` to get the element to
+which the shadow root is attached.
+- `@el` (HTMLElement) - the actual element that you want to attach the shadow root to. This attribute
+will always take precedence over `@selector`.
+- `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`.
 
 Contributing
-------------------------------------------------------------------------------
+------------
 
-### Installation
+See the [Contributing.md](./CONTRIBUTING.md) guide.
 
-* `git clone <repository-url>`
-* `cd ember-shadow-dom`
-* `npm install`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Running tests
-
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
-------------------------------------------------------------------------------
+-------
 
 This project is licensed under the [MIT License](LICENSE.md).
