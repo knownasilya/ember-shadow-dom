@@ -58,6 +58,7 @@ Outside of the shadow dom
   </style>
 
   <span class='internal'>Internal</span>
+  {{yield}}
 </ShadowDom>
 ```
 
