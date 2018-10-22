@@ -5,6 +5,10 @@ Write templates for your components inside of a Shadow DOM root.
 Allows encapsulating styles (CSS) and markup (HTML) but using templates like
 you're used to.
 
+> Note: This addon uses a private API `{{-in-element}}`, but this API is on it's
+> way to becoming public. See [RFC 287](https://github.com/emberjs/rfcs/pull/287),
+> which was recently accepted.
+
 Installation
 ------------
 
@@ -15,7 +19,7 @@ ember install ember-shadow-dom
 Usage
 -----
 
-This addon provdes a component called `ShadowDom` (or `shadow-dom` if not using angle brackets)
+This addon provides a component called `ShadowDom` (or `shadow-dom` if not using angle brackets)
 
 ```hbs
 <ShadowDom @el={{this.element}}>
@@ -32,7 +36,8 @@ This addon provdes a component called `ShadowDom` (or `shadow-dom` if not using 
 This mode makes the encapsulating component's children a shadow root, meaning
 it does not support having any elements outside of the `ShadowDom` component block.
 
-To mix shadow and normal templates, you need to use the `@selector` attribute.
+To mix shadow and normal templates, you could take advantage of the `@selector`
+attribute (at least until we have something like a `ref` helper in Ember).
 
 ```hbs
 <div id='internal'></div>
