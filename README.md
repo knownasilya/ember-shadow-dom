@@ -80,7 +80,7 @@ See the [Contributing.md](./CONTRIBUTING.md) guide.
 Attribution
 -----------
 
-Thanks to @rwjblue for realizing that `{{-in-element}}` can be used for the shadow root!
+Thanks to [@rwjblue](https://github.com/rwjblue) for realizing that `{{-in-element}}` can be used for the shadow root!
 
 License
 -------
