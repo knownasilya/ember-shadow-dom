@@ -9,6 +9,11 @@ you're used to.
 > way to becoming public. See [RFC 287](https://github.com/emberjs/rfcs/pull/287),
 > which was recently accepted.
 
+Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
+
+> Compatibility: Not all browsers support Shadow DOM (v1) yet, see [CanIUse](https://caniuse.com/#feat=shadowdomv1)
+> to see if your target browsers support this new feature.
+
 Installation
 ------------
 
