@@ -14,6 +14,8 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 > Compatibility: Not all browsers support Shadow DOM (v1) yet, see [CanIUse](https://caniuse.com/#feat=shadowdomv1)
 > to see if your target browsers support this new feature.
 
+[![npm version][npm-badge]][npm-badge-url]
+
 Installation
 ------------
 
@@ -86,3 +88,6 @@ License
 -------
 
 This project is licensed under the [MIT License](LICENSE.md).
+
+[npm-badge]: https://badge.fury.io/js/ember-shadow-dom.svg
+[npm-badge-url]: http://badge.fury.io/js/ember-shadow-dom
