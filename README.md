@@ -14,7 +14,9 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 > Compatibility: Not all browsers support Shadow DOM (v1) yet, see [CanIUse](https://caniuse.com/#feat=shadowdomv1)
 > to see if your target browsers support this new feature.
 
-[![npm version][npm-badge]][npm-badge-url]
+[![npm version][npm-badge]][npm-badge-url] 
+
+[Try it in a CodeSandbox](https://codesandbox.io/s/kx0x7xr8mv)
 
 Installation
 ------------
