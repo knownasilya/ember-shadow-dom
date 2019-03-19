@@ -39,7 +39,7 @@ Usage
 This addon provides a component called `ShadowDom` (or `shadow-dom` if not using angle brackets)
 
 ```hbs
-<ShadowDom @el={{this.element}}>
+<ShadowDom>
   <style>
     .internal {
       color: red;
@@ -50,27 +50,9 @@ This addon provides a component called `ShadowDom` (or `shadow-dom` if not using
 </ShadowDom>
 ```
 
-This mode makes the encapsulating component's children a shadow root, meaning
-it does not support having any elements outside of the `ShadowDom` component block.
+This mode makes the encapsulating component's children a shadow root.
 
-To mix shadow and normal templates, you could take advantage of the `@selector`
-attribute (at least until we have something like a `ref` helper in Ember).
 
-```hbs
-<div id='internal'></div>
-Outside of the shadow dom
-
-<ShadowDom @selector='#internal'>
-  <style>
-    .internal {
-      color: red;
-    }
-  </style>
-
-  <span class='internal'>Internal</span>
-  {{yield}}
-</ShadowDom>
-```
 
 API
 ---
@@ -79,11 +61,7 @@ API
 
 #### Attributes
 
-- `@selector` (string) - selector used by `document.querySelector` to get the element to
-which the shadow root is attached.
-- `@el` (HTMLElement) - the actual element that you want to attach the shadow root to. This attribute
-will always take precedence over `@selector`.
-- `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`.
+- `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`. Can be `'open'` or `'closed'`.
 
 Contributing
 ------------
