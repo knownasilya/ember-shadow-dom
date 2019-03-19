@@ -25,14 +25,15 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.6.0",
-    "ember-cli-htmlbars": "^3.0.0",
+    "@ember-decorators/babel-transforms": "^2.1.2",
     "@glimmer/component": "^0.14.0-alpha.3",
-    "@ember-decorators/babel-transforms": "^2.1.2"
+    "ember-cli-babel": "^7.6.0",
+    "ember-cli-htmlbars": "^3.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
     "@ember/optional-features": "^0.7.0",
+    "@ember/render-modifiers": "^1.0.0",
+    "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.2.20",
     "ember-cli": "github:ember-cli/ember-cli#29be08db0725bf1d07877702bc4b27a9428c4875",
@@ -57,6 +58,9 @@
     "loader.js": "^4.7.0",
     "qunit-dom": "^0.8.0",
     "standard-version": "^4.4.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.3.4"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"

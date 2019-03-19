@@ -8,12 +8,11 @@ module('Integration | Component | shadow-dom', function(hooks) {
 
   test('it renders', async function(assert) {
     await render(hbs`
-      <div id='internal'></div>
-      <ShadowDom @selector='#internal'>
-        template block text
+      <ShadowDom id='internal'>
+        <div class='block'>template block text</div>
       </ShadowDom>
     `);
 
-    assert.equal(find('#internal').shadowRoot.textContent.trim(), 'template block text');
+    assert.dom('.block', find('#internal').shadowRoot).hasText('template block text');
   });
 });
