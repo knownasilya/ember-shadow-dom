@@ -1,5 +1,5 @@
-import Component from '@glimmer/component';
-import { tracked } from '@glimmer/tracking';
+import Component, { tracked } from '@glimmer/component';
+//import { tracked } from '@glimmer/tracking';
 import layout from './template';
 
 export default class ShadowDom extends Component {
