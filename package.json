@@ -25,7 +25,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.1.2",
+    "ember-cli-babel": "^7.6.0",
     "ember-cli-htmlbars": "^3.0.0",
     "@glimmer/component": "^0.14.0-alpha.3",
     "@glimmer/tracking": "^0.14.0-alpha.1",
@@ -36,7 +36,7 @@
     "@ember/render-modifiers": "^1.0.0",
     "babel-eslint": "^8.0.2",
     "broccoli-asset-rev": "^2.7.0",
-    "ember-cli": "~3.8.1",
+    "ember-cli": "github:ember-cli/ember-cli#29be08db0725bf1d07877702bc4b27a9428c4875",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-eslint": "^4.2.3",
     "ember-cli-htmlbars-inline-precompile": "^1.0.3",
@@ -50,7 +50,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^3.4.1",
     "ember-resolver": "^5.0.1",
-    "ember-source": "~3.8.0",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/d7e09491ee3d119cf0dbef0d3bb9017a6f2330b8.tgz",
     "ember-source-channel-url": "^1.1.0",
     "ember-try": "^1.0.0",
     "eslint-plugin-ember": "^5.2.0",
