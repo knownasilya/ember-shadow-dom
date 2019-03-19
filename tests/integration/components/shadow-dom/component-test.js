@@ -1,26 +1,19 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { find, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | shadow-dom', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
-    await render(hbs`{{shadow-dom}}`);
-
-    assert.dom(this.element).hasText('');
-
-    // Template block usage:
     await render(hbs`
-      {{#shadow-dom}}
+      <div id='internal'></div>
+      <ShadowDom @selector='#internal'>
         template block text
-      {{/shadow-dom}}
+      </ShadowDom>
     `);
 
-    assert.dom(this.element).hasText('template block text');
+    assert.equal(find('#internal').shadowRoot.textContent.trim(), 'template block text');
   });
 });
