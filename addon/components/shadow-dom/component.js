@@ -1,23 +1,23 @@
-import Component from '@ember/component';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 import layout from './template';
 
-export default Component.extend({
-  layout,
-  tagName: '',
-  mode: 'open',
+export default class ShadowDom extends Component {
+  @tracked shadow = null;
 
-  didInsertElement() {
-    let element = this.el;
+  layout = layout;
+  mode = 'open';
 
-    if (!element) {
-      let selector = this.selector;
+  constructor() {
+    super(...arguments);
+    this.setupRoot();
+  }
 
-      element = document.querySelector(selector);
-    }
-
+  setupRoot() {
     let mode = this.mode;
+    let element = document.createElement('div');
     let shadow = element.attachShadow({ mode });
 
-		this.set('shadow', shadow);
+		this.shadow = shadow;
   }
-});
+}
