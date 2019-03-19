@@ -63,6 +63,23 @@ API
 
 - `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`. Can be `'open'` or `'closed'`.
 
+Testing
+-------
+
+Components with a shadowdom can be tested using qunit-dom like so:
+
+```js
+assert.dom('.block', find('#internal').shadowRoot).hasText('template block text');
+```
+
+Where the template looks like:
+
+```hbs
+<ShadowDom id='internal'>
+  <div class='block'>template block text</div>
+</ShadowDom>
+```
+
 Contributing
 ------------
 
