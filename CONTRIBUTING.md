@@ -1,5 +1,4 @@
-Contributing
-============
+# How To Contribute
 
 ## Installation
 

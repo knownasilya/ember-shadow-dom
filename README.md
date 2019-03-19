@@ -18,6 +18,14 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 
 [Try it in a CodeSandbox](https://codesandbox.io/s/kx0x7xr8mv)
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
 Installation
 ------------
 
@@ -80,12 +88,14 @@ will always take precedence over `@selector`.
 Contributing
 ------------
 
-See the [Contributing.md](./CONTRIBUTING.md) guide.
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
 
 Attribution
 -----------
 
 Thanks to [@rwjblue](https://github.com/rwjblue) for realizing that `{{-in-element}}` can be used for the shadow root!
+
 
 License
 -------
