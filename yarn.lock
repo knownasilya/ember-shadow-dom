@@ -2658,7 +2658,7 @@ broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.4.3:
     symlink-or-copy "^1.0.1"
     walk-sync "^0.3.1"
 
-broccoli-persistent-filter@^2.1.0, broccoli-persistent-filter@^2.1.1, broccoli-persistent-filter@^2.2.1:
+broccoli-persistent-filter@^2.1.0, broccoli-persistent-filter@^2.1.1, broccoli-persistent-filter@^2.2.1, broccoli-persistent-filter@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/broccoli-persistent-filter/-/broccoli-persistent-filter-2.2.2.tgz#e0180e75ede5dd05d4c702f24f6c049e93fba915"
   integrity sha512-PW12RD1yY+x5SASUADuUMJce+dVSmjBO3pV1rLNHmT1C31rp1P++TvX7AgUObFmGhL7qlwviSdhMbBkY1v3G2w==

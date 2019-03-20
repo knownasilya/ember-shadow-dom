@@ -25,11 +25,13 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "ember-element-helper": "^0.1.1",
     "@ember-decorators/babel-transforms": "^2.1.2",
     "@glimmer/component": "^0.14.0-alpha.3",
+    "broccoli-persistent-filter": "^2.2.2",
     "ember-cli-babel": "^7.6.0",
-    "ember-cli-htmlbars": "^3.0.0"
+    "ember-cli-htmlbars": "^3.0.0",
+    "ember-element-helper": "^0.1.1",
+    "md5-hex": "^2.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.7.0",

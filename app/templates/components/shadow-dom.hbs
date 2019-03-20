@@ -1,9 +1,13 @@
-{{#let (element this.tagName) as |Tag|}}
+{{!-- {{#let (element this.tagName) as |Tag|}}
   <Tag
     {{did-insert this.setupRoot}}
     ...attributes
   />
-{{/let}}
+{{/let}} --}}
+<div
+  {{did-insert this.setupRoot}}
+  ...attributes
+></div>
 
 {{#if this.shadow}}
   {{#-in-element this.shadow}}
