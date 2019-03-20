@@ -5,11 +5,11 @@ import { action } from '@ember/object';
 export default class ShadowDom extends Component {
   @tracked shadow = null;
 
-  mode = 'open';
+  defaultMode = 'open';
 
   @action
   setupRoot(element) {
-    let mode = this.mode;
+    let mode = this.args.mode || this.defaultMode;
     let shadow = element.attachShadow({ mode });
 
 		this.shadow = shadow;

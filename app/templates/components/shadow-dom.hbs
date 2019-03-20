@@ -1,4 +1,8 @@
-<div {{did-insert this.setupRoot}} ...attributes></div>
+<div
+  {{did-insert this.setupRoot}}
+  ...attributes
+></div>
+
 {{#if this.shadow}}
   {{#-in-element this.shadow}}
     {{yield}}
