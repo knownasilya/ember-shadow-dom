@@ -8,12 +8,12 @@ module('Integration | Component | shadow-dom', function(hooks) {
 
   test('it renders', async function(assert) {
     await render(hbs`
-      <ShadowDom id='internal' @mode='open'>
+      <ShadowDom>
         <div class='block'>template block text</div>
       </ShadowDom>
     `);
 
-    assert.dom('.block', find('#internal').shadowRoot).hasText('template block text');
+    assert.dom('.block', find('div').shadowRoot).hasText('template block text');
   });
 
   test('it can be closed', async function(assert) {
