@@ -25,4 +25,14 @@ module('Integration | Component | shadow-dom', function(hooks) {
 
     assert.dom('.block', find('#internal').shadowRoot).doesNotExist();
   });
+
+  test('it can have a different tag name', async function(assert) {
+    await render(hbs`
+      <ShadowDom @tagName='span'>
+        <div class='block'>template block text</div>
+      </ShadowDom>
+    `);
+
+    assert.dom('.block', find('span').shadowRoot).hasText('template block text');
+  });
 });

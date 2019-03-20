@@ -4,8 +4,14 @@ import { action } from '@ember/object';
 
 export default class ShadowDom extends Component {
   @tracked shadow = null;
+  @tracked tagName = 'div';
 
   defaultMode = 'open';
+
+  constructor() {
+    super(...arguments);
+    this.tagName = this.args.tagName || this.tagName;
+  }
 
   @action
   setupRoot(element) {
