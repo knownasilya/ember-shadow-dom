@@ -59,9 +59,12 @@ API
 
 ### `ShadowDom` (`shadow-dom`)
 
-#### Attributes
+#### Arguments
 
 - `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`. Can be `'open'` or `'closed'`.
+Note that `'closed'` mode prevents you from querying into the DOM of your components in tests.
+- `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
+Setting this argument changes the top level element that the shadow root is attached to.
 
 Testing
 -------
