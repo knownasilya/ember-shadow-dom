@@ -4,7 +4,7 @@ import { action } from '@ember/object';
 
 export default class ShadowDom extends Component {
   @tracked shadow = null;
-  @tracked tagName = 'div';
+  // @tracked tagName = 'div';
 
   defaultMode = 'open';
 
