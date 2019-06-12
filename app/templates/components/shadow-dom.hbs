@@ -4,7 +4,11 @@
     ...attributes
   />
 {{/let}} --}}
-<div {{did-insert this.setupRoot}} ...attributes></div>
+<div {{did-insert this.setupRoot}} ...attributes>
+  {{#unless this.shadow}}
+    {{yield}}
+  {{/unless}}
+</div>
 
 {{#if this.shadow}}
   {{#-in-element this.shadow}}
