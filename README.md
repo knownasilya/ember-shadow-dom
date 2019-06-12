@@ -63,13 +63,13 @@ API
 
 - `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`. Can be `'open'` or `'closed'`.
 Note that `'closed'` mode prevents you from querying into the DOM of your components in tests.
-- `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
-Setting this argument changes the top level element that the shadow root is attached to.
+<!-- - `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
+Setting this argument changes the top level element that the shadow root is attached to. -->
 
 Testing
 -------
 
-Components with a shadowdom can be tested using qunit-dom like so:
+Components with a open shadowroot can be tested using qunit-dom like so:
 
 ```js
 assert.dom('.block', find('#internal').shadowRoot).hasText('template block text');
