@@ -11,10 +11,10 @@ module.exports = function() {
     return {
       scenarios: [
         {
-          name: 'ember-lts-3.7.2',
+          name: 'ember-3.10',
           npm: {
             devDependencies: {
-              'ember-source': '~3.7.2'
+              'ember-source': '~3.10.0'
             }
           }
         },

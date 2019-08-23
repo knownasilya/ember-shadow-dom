@@ -22,7 +22,7 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.7.2 or above ([See why][see-why])
+* Ember.js v3.10.0 or above (Decorators and [more][see-why])
 * Ember CLI v2.13 or above
 
 
