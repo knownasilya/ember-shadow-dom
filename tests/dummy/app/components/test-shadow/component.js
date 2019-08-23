@@ -3,5 +3,9 @@ import layout from './template';
 
 export default Component.extend({
   layout,
-  tagName: ''
+  // tagName: '',
+
+  clicked() {
+    this.set('wasClicked', true);
+  }
 });

@@ -10,5 +10,7 @@ Outside the shadow
 
   <div class='internal'>
     in the shadow
+    <button {{action this.clicked}}>Clicked</button>
+    {{if this.wasClicked 'Clicked' 'Not Clicked'}}
   </div>
 </ShadowDom>
