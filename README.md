@@ -22,7 +22,7 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v2.18 or above
+* Ember.js v3.7.2 or above ([See why][see-why])
 * Ember CLI v2.13 or above
 
 
@@ -63,8 +63,8 @@ API
 
 - `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`. Can be `'open'` or `'closed'`.
 Note that `'closed'` mode prevents you from querying into the DOM of your components in tests.
-<!-- - `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
-Setting this argument changes the top level element that the shadow root is attached to. -->
+- `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
+Setting this argument changes the top level element that the shadow root is attached to.
 
 Testing
 -------
@@ -72,7 +72,8 @@ Testing
 Components with a open shadowroot can be tested using qunit-dom like so:
 
 ```js
-assert.dom('.block', find('#internal').shadowRoot).hasText('template block text');
+let root = find('#internal').shadowRoot;
+assert.dom('.block', root).hasText('template block text');
 ```
 
 Where the template looks like:
@@ -102,3 +103,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 [npm-badge]: https://badge.fury.io/js/ember-shadow-dom.svg
 [npm-badge-url]: http://badge.fury.io/js/ember-shadow-dom
+[see-why]: https://github.com/tildeio/ember-element-helper/issues/6#issuecomment-519349886]]

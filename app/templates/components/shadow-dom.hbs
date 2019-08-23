@@ -1,14 +1,13 @@
-{{!-- {{#let (element this.tagName) as |Tag|}}
+{{#let (element this.tagName) as |Tag|}}
   <Tag
     {{did-insert this.setupRoot}}
     ...attributes
-  />
-{{/let}} --}}
-<div {{did-insert this.setupRoot}} ...attributes>
-  {{#unless this.shadow}}
-    {{yield}}
-  {{/unless}}
-</div>
+  >
+    {{#unless this.shadow}}
+      {{yield}}
+    {{/unless}}
+  </Tag>
+{{/let}}
 
 {{#if this.shadow}}
   {{#-in-element this.shadow}}
