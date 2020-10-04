@@ -4,7 +4,7 @@ import { action } from '@ember/object';
 
 const isFastBoot = typeof FastBoot !== 'undefined';
 
-export default class ShadowDom extends Component {
+export default class ShadowRoot extends Component {
   @tracked shadow = null;
   @tracked tagName = 'div';
 

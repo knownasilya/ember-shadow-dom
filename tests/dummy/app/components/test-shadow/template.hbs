@@ -1,6 +1,6 @@
 Outside the shadow
 
-<ShadowDom class='hello'>
+<ShadowRoot class='hello'>
   <style>
     .internal {
       color: red;
@@ -12,11 +12,11 @@ Outside the shadow
     <button {{action this.clicked}}>Clicked</button>
     {{if this.wasClicked 'Clicked' 'Not Clicked'}}
   </div>
-</ShadowDom>
+</ShadowRoot>
 
 <hr>
 closed<br>
 
-<ShadowDom id='internal' @mode='closed'>
+<ShadowRoot id='internal' @mode='closed'>
   <div class='block'>template block text</div>
-</ShadowDom>
+</ShadowRoot>

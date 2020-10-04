@@ -31,10 +31,10 @@ ember install ember-shadow-dom
 
 ## Usage
 
-This addon provides a component called `ShadowDom` (or `shadow-dom` if not using angle brackets)
+This addon provides a component called `ShadowRoot` (or `shadow-root` if not using angle brackets)
 
 ```hbs
-<ShadowDom>
+<ShadowRoot>
   <style>
     .internal {
       color: red;
@@ -42,14 +42,14 @@ This addon provides a component called `ShadowDom` (or `shadow-dom` if not using
   </style>
 
   <span class='internal'>Internal</span>
-</ShadowDom>
+</ShadowRoot>
 ```
 
 This mode makes the encapsulating component's children a shadow root.
 
 ## API
 
-### `ShadowDom` (`shadow-dom`)
+### `ShadowRoot` (`shadow-root`)
 
 #### Arguments
 
@@ -70,9 +70,9 @@ assert.dom('.block', root).hasText('template block text');
 Where the template looks like:
 
 ```hbs
-<ShadowDom id='internal'>
+<ShadowRoot id='internal'>
   <div class='block'>template block text</div>
-</ShadowDom>
+</ShadowRoot>
 ```
 
 ## Contributing
