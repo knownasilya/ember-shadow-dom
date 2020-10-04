@@ -1,5 +1,4 @@
-ember-shadow-dom
-================
+# ember-shadow-dom
 
 Write templates for your components inside of a Shadow DOM root.
 Allows encapsulating styles (CSS) and markup (HTML) but using templates like
@@ -14,27 +13,23 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 > Compatibility: Not all browsers support Shadow DOM (v1) yet, see [CanIUse](https://caniuse.com/#feat=shadowdomv1)
 > to see if your target browsers support this new feature.
 
-[![npm version][npm-badge]][npm-badge-url] 
+[![npm version][npm-badge]][npm-badge-url]
 
 [Try it in a CodeSandbox](https://codesandbox.io/s/kx0x7xr8mv)
 
+## Compatibility
 
-Compatibility
-------------------------------------------------------------------------------
+- Ember.js v3.16 or above (Decorators and [more][see-why])
+- Ember CLI v2.13 or above
+- Node.js v10 or above
 
-* Ember.js v3.10.0 or above (Decorators and [more][see-why])
-* Ember CLI v2.13 or above
-
-
-Installation
-------------
+## Installation
 
 ```sh
 ember install ember-shadow-dom
 ```
 
-Usage
------
+## Usage
 
 This addon provides a component called `ShadowDom` (or `shadow-dom` if not using angle brackets)
 
@@ -52,22 +47,18 @@ This addon provides a component called `ShadowDom` (or `shadow-dom` if not using
 
 This mode makes the encapsulating component's children a shadow root.
 
-
-
-API
----
+## API
 
 ### `ShadowDom` (`shadow-dom`)
 
 #### Arguments
 
 - `@mode` (string) - The mode of the Shadow Root, defaults to `'open'`. Can be `'open'` or `'closed'`.
-Note that `'closed'` mode prevents you from querying into the DOM of your components in tests.
+  Note that `'closed'` mode prevents you from querying into the DOM of your components in tests.
 - `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
-Setting this argument changes the top level element that the shadow root is attached to.
+  Setting this argument changes the top level element that the shadow root is attached to.
 
-Testing
--------
+## Testing
 
 Components with a open shadowroot can be tested using qunit-dom like so:
 
@@ -84,23 +75,19 @@ Where the template looks like:
 </ShadowDom>
 ```
 
-Contributing
-------------
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-
-Attribution
------------
+## Attribution
 
 Thanks to [@rwjblue](https://github.com/rwjblue) for realizing that `{{-in-element}}` can be used for the shadow root!
 
-
-License
--------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
 
 [npm-badge]: https://badge.fury.io/js/ember-shadow-dom.svg
 [npm-badge-url]: http://badge.fury.io/js/ember-shadow-dom
+
 [see-why]: https://github.com/tildeio/ember-element-helper/issues/6#issuecomment-519349886]]
