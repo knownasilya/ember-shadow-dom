@@ -13,7 +13,6 @@ you're used to.
 
 [![npm version][npm-badge]][npm-badge-url]
 
-[Try it in a CodeSandbox](https://codesandbox.io/s/kx0x7xr8mv)
 
 ## Compatibility
 
