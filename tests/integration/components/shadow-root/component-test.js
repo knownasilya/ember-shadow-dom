@@ -13,9 +13,7 @@ module('Integration | Component | shadow-root', function (hooks) {
       </ShadowRoot>
     `);
 
-    assert
-      .dom('.block', find('.ember-view > div').shadowRoot)
-      .hasText('template block text');
+    assert.dom('.block', find('div').shadowRoot).hasText('template block text');
   });
 
   test('it can be closed', async function (assert) {
