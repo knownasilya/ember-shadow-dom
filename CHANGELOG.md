@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/knownasilya/ember-shadow-dom/compare/v1.0.0...v1.0.1) (2020-10-04)
+
+
+### Bug Fixes
+
+* invalid export and lint ([f730999](https://github.com/knownasilya/ember-shadow-dom/commit/f730999bb5e263a8fdcb76d5fa072469c61f0b89))
+
 ## [1.0.0](https://github.com/knownasilya/ember-shadow-dom/compare/v0.1.4...v1.0.0) (2020-10-04)
 
 
