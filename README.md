@@ -4,10 +4,6 @@ Write templates for your components inside of a Shadow DOM root.
 Allows encapsulating styles (CSS) and markup (HTML) but using templates like
 you're used to.
 
-> Note: This addon uses a private API `{{-in-element}}`, but this API is on it's
-> way to becoming public. See [RFC 287](https://github.com/emberjs/rfcs/pull/287),
-> which was recently accepted.
-
 Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
 > Compatibility: Not all browsers support Shadow DOM (v1) yet, see [CanIUse](https://caniuse.com/#feat=shadowdomv1)
@@ -22,6 +18,8 @@ Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozi
 - Ember.js v3.16 or above (Decorators and [more][see-why])
 - Ember CLI v2.13 or above
 - Node.js v10 or above
+
+If using Ember < 3.20, this addon will use the private version of `{{in-element}}` via a polyfill.
 
 ## Installation
 
@@ -81,7 +79,7 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 
 ## Attribution
 
-Thanks to [@rwjblue](https://github.com/rwjblue) for realizing that `{{-in-element}}` can be used for the shadow root!
+Thanks to [@rwjblue](https://github.com/rwjblue) for realizing that `{{in-element}}` can be used for the shadow root!
 
 ## License
 

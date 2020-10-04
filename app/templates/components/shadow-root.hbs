@@ -10,9 +10,9 @@
     <Tag ...attributes {{did-insert this.setupRoot}} />
 
     {{#if this.shadow}}
-      {{#-in-element this.shadow}}
+      {{#in-element this.shadow}}
         {{yield}}
-      {{/-in-element}}
+      {{/in-element}}
     {{/if}}
   {{/if}}
 {{/let}}
