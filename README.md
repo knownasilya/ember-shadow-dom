@@ -13,7 +13,6 @@ you're used to.
 
 [![npm version][npm-badge]][npm-badge-url]
 
-
 ## Compatibility
 
 - Ember.js v3.16 or above (Decorators and [more][see-why])
@@ -30,7 +29,7 @@ ember install ember-shadow-dom
 
 ## Usage
 
-This addon provides a component called `ShadowRoot` (or `shadow-root` if not using angle brackets)
+This addon provides a component called `ShadowRoot`.
 
 ```hbs
 <ShadowRoot>
@@ -44,11 +43,78 @@ This addon provides a component called `ShadowRoot` (or `shadow-root` if not usi
 </ShadowRoot>
 ```
 
-This mode makes the encapsulating component's children a shadow root.
+This makes the encapsulating component's children a shadow root.
+
+### Slots
+
+In Shadow DOM you can generally use `<slots>`, but with Ember you can just use `{{yield}}`.
+
+```hbs
+{{! components/test.hbs }}
+<ShadowRoot>
+  <style>
+    .internal {
+      color: red;
+    }
+  </style>
+
+  <span class='internal'>
+    {{yield}}
+  </span>
+</ShadowRoot>
+```
+
+And you can call the component:
+
+```hbs
+<Test>
+  Hello World!
+</Test>
+```
+
+And the contents `Hello World!` will be inside the shadow root. If you need multiple
+"slots", you can use [ember-named-blocks-polyfill](https://github.com/ember-polyfills/ember-named-blocks-polyfill).
+
+```hbs
+{{! components/card.hbs }}
+<ShadowRoot ...attributes>
+  <style>
+    .title {
+      color: red;
+    }
+
+    .body {
+      margin-top: 1rem;
+    }
+  </style>
+
+  <header class='title'>
+    {{yield to='title'}}
+  </header>
+
+  <div class='body'>
+    {{yield to='body'}}
+  </div>
+</ShadowRoot>
+```
+
+And use the component like so:
+
+```hbs
+<Card class='custom-card'>
+  <:title>
+    My title
+  </:title>
+
+  <:body>
+    Some content here!
+  </:body>
+</Card>
+```
 
 ## API
 
-### `ShadowRoot` (`shadow-root`)
+### `<ShadowRoot>` Component
 
 #### Arguments
 
