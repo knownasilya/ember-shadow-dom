@@ -9,14 +9,19 @@ Outside the shadow
 
   <div class='internal'>
     in the shadow
-    <button {{action this.clicked}}>Clicked</button>
+    <button type='button' {{on 'click' this.clicked}}>
+      Clicked
+    </button>
     {{if this.wasClicked 'Clicked' 'Not Clicked'}}
   </div>
 </ShadowRoot>
 
-<hr>
-closed<br>
+<hr />
+closed
+<br />
 
 <ShadowRoot id='internal' @mode='closed'>
-  <div class='block'>template block text</div>
+  <div class='block'>
+    template block text
+  </div>
 </ShadowRoot>
