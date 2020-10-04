@@ -1,12 +1,18 @@
 {{#let (element this.tagName) as |Tag|}}
-  <Tag
-    {{did-insert this.setupRoot}}
-    ...attributes
-  />
-{{/let}}
+  {{#if this.isFastBoot}}
+    <Tag ...attributes>
+      <template shadowroot={{@mode}}>
+        <slot></slot>
+      </template>
+      {{yield}}
+    </Tag>
+  {{else}}
+    <Tag ...attributes {{did-insert this.setupRoot}} />
 
-{{#if this.shadow}}
-  {{#-in-element this.shadow}}
-    {{yield}}
-  {{/-in-element}}
-{{/if}}
+    {{#if this.shadow}}
+      {{#-in-element this.shadow}}
+        {{yield}}
+      {{/-in-element}}
+    {{/if}}
+  {{/if}}
+{{/let}}
