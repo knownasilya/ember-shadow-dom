@@ -2,7 +2,7 @@
 
 Write templates for your components inside of a Shadow DOM root.
 Allows encapsulating styles (CSS) and markup (HTML) but using templates like
-you're used to.
+you're used to. Experimental support for SSR/FastBoot (see https://web.dev/declarative-shadow-dom/).
 
 Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
@@ -55,6 +55,17 @@ This mode makes the encapsulating component's children a shadow root.
   Note that `'closed'` mode prevents you from querying into the DOM of your components in tests.
 - `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
   Setting this argument changes the top level element that the shadow root is attached to.
+
+## FastBoot/SSR (experimental)
+
+This addon supports ShadowDom in SSR (meaning your styles will remain the same on initial render and not change when rehydrated)
+via a new experimental flag ONLY in Chrome 85+ with the following flag enabled:
+
+```
+chrome://flags/#enable-experimental-web-platform-features
+```
+
+Other browser vendors should follow, but there is some risk that it never happens.
 
 ## Testing
 
