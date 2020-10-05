@@ -15,7 +15,7 @@ you're used to.
 
 ## Compatibility
 
-- Ember.js v3.16 or above (Decorators and [more][see-why])
+- Ember.js v3.16 or above
 - Ember CLI v2.13 or above
 - Node.js v10 or above
 
@@ -165,5 +165,3 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 [npm-badge]: https://badge.fury.io/js/ember-shadow-dom.svg
 [npm-badge-url]: http://badge.fury.io/js/ember-shadow-dom
-
-[see-why]: https://github.com/tildeio/ember-element-helper/issues/6#issuecomment-519349886]]
