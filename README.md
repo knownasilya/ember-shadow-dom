@@ -133,6 +133,7 @@ chrome://flags/#enable-experimental-web-platform-features
 ```
 
 Other browser vendors should follow, but there is some risk that it never happens.
+Details here: https://www.chromestatus.com/feature/5191745052606464
 
 ## Testing
 
