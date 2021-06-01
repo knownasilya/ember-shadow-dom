@@ -17,7 +17,7 @@ you're used to.
 
 - Ember.js v3.16 or above
 - Ember CLI v2.13 or above
-- Node.js v10 or above
+- Node.js v12 or above
 
 If using Ember < 3.20, this addon will use the private version of `{{in-element}}` via a polyfill.
 
@@ -34,9 +34,7 @@ This addon provides a component called `ShadowRoot`.
 ```hbs
 <ShadowRoot>
   <style>
-    .internal {
-      color: red;
-    }
+    .internal { color: red; }
   </style>
 
   <span class='internal'>Internal</span>
@@ -53,9 +51,7 @@ In Shadow DOM you can generally use `<slots>`, but with Ember you can just use `
 {{! components/test.hbs }}
 <ShadowRoot>
   <style>
-    .internal {
-      color: red;
-    }
+    .internal { color: red; }
   </style>
 
   <span class='internal'>
@@ -79,13 +75,7 @@ And the contents `Hello World!` will be inside the shadow root. If you need mult
 {{! components/card.hbs }}
 <ShadowRoot ...attributes>
   <style>
-    .title {
-      color: red;
-    }
-
-    .body {
-      margin-top: 1rem;
-    }
+    .title { color: red; } .body { margin-top: 1rem; }
   </style>
 
   <header class='title'>

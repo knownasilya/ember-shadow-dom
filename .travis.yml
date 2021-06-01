@@ -3,7 +3,7 @@ language: node_js
 node_js:
   # we recommend testing addons with the same minimum supported node version as Ember CLI
   # so that your addon works for all apps
-  - '10'
+  - '12'
 
 dist: xenial
 
@@ -54,6 +54,8 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-canary
     - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
     - env: EMBER_TRY_SCENARIO=ember-classic
+    - env: EMBER_TRY_SCENARIO=embroider-safe
+    - env: EMBER_TRY_SCENARIO=embroider-optimized
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
