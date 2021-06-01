@@ -1,6 +1,7 @@
 Outside the shadow
 
 <ShadowRoot class='hello'>
+  {{! template-lint-disable no-forbidden-elements}}
   <style>
     .internal {
       color: {{or @color 'red'}};
