@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/knownasilya/ember-shadow-dom/compare/v1.0.1...v2.0.0) (2021-06-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Node.js < 12. Might still work, but no longer tested.
+
+### Bug Fixes
+
+* attempt fixing double set ([3b10e7c](https://github.com/knownasilya/ember-shadow-dom/commit/3b10e7cac16c1c5f9e9706b3c3af10b852a8b9dd))
+* Update Ember v3.21.2...v3.26.1 ([5fe9e23](https://github.com/knownasilya/ember-shadow-dom/commit/5fe9e23931eadcd0d589d4451ebc28baceaa89aa))
+
 ### [1.0.1](https://github.com/knownasilya/ember-shadow-dom/compare/v1.0.0...v1.0.1) (2020-10-04)
 
 
