@@ -112,14 +112,9 @@ And use the component like so:
 - `@tagName` (string) - This defaults to `'div'`, but can be any valid element tag name used in HTML.
   Setting this argument changes the top level element that the shadow root is attached to.
 
-## FastBoot/SSR (experimental)
+## FastBoot/SSR
 
-This addon supports ShadowDom in SSR (meaning your styles will remain the same on initial render and not change when rehydrated)
-via a new experimental flag ONLY in Chrome 85+ with the following flag enabled:
-
-```
-chrome://flags/#enable-experimental-web-platform-features
-```
+This addon supports ShadowDom in SSR (meaning your styles will remain the same on initial render and not change when rehydrated) in Chrome 90+
 
 Other browser vendors should follow, but there is some risk that it never happens.
 Details here: https://www.chromestatus.com/feature/5191745052606464
