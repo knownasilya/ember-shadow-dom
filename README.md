@@ -4,12 +4,11 @@ Write templates for your components inside of a Shadow DOM root.
 Allows encapsulating styles (CSS) and markup (HTML) but using templates like
 you're used to.
 
-🛠 Experimental support for SSR/FastBoot in Chrome via a flag (see https://web.dev/declarative-shadow-dom/).
+🛠 Support for SSR/FastBoot in Chrome 90+, [Release notes](https://developer.chrome.com/blog/new-in-chrome-90/#declarative).
 
 🤔 Not sure what Shadow DOM is? Check out this [MDN article](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
-> Compatibility: Not all browsers support Shadow DOM (v1) yet, see [CanIUse](https://caniuse.com/#feat=shadowdomv1)
-> to see if your target browsers support this new feature.
+> Compatibility: Most browsers support Shadow DOM (v1), except for IE11, see [CanIUse](https://caniuse.com/#feat=shadowdomv1) for details
 
 [![npm version][npm-badge]][npm-badge-url]
 
