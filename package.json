@@ -39,6 +39,7 @@
     "ember-in-element-polyfill": "^1.0.1"
   },
   "devDependencies": {
+    "@embroider/macros": "^1.0.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@embroider/test-setup": "^0.50.2",
