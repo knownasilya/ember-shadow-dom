@@ -48,7 +48,7 @@
     "ember-cli": "^4.1.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-dependency-checker": "^3.2.0",
-    "ember-cli-fastboot": "^2.2.3",
+    "ember-cli-fastboot": "^3.2.0",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
@@ -89,7 +89,7 @@
     "configPath": "tests/dummy/config"
   },
   "volta": {
-    "node": "12.22.1",
+    "node": "14.19.0",
     "yarn": "1.22.17"
   }
 }
