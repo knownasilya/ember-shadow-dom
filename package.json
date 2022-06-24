@@ -35,21 +35,21 @@
     "@glimmer/tracking": "^1.0.4",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-htmlbars": "^6.0.1",
-    "ember-element-helper": "^0.6.0",
+    "ember-element-helper": "^0.6.1",
     "ember-in-element-polyfill": "^1.0.1"
   },
   "devDependencies": {
-    "@embroider/macros": "^1.0.0",
+    "@embroider/macros": "^1.8.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
-    "@embroider/test-setup": "^0.50.2",
+    "@embroider/test-setup": "^1.8.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-auto-import": "^2.2.4",
+    "ember-auto-import": "^2.4.2",
     "ember-cli": "^4.1.0",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-dependency-checker": "^3.2.0",
-    "ember-cli-fastboot": "^3.2.0",
+    "ember-cli-fastboot": "^3.2.2",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
@@ -75,10 +75,7 @@
     "qunit": "^2.17.2",
     "qunit-dom": "^2.0.0",
     "standard-version": "^9.3.0",
-    "webpack": "^5.65.0"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.3.4"
+    "webpack": "^5.73.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
@@ -91,6 +88,6 @@
   },
   "volta": {
     "node": "14.19.0",
-    "yarn": "1.22.17"
+    "yarn": "1.22.19"
   }
 }
