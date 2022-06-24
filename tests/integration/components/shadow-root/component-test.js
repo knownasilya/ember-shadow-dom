@@ -16,7 +16,7 @@ module('Integration | Component | shadow-root', function (hooks) {
 
     // Ember classic that uses template-only-glimmer-components
     // No way to check if that feature is enabled https://github.com/pzuraq/ember-compatibility-helpers/issues/27
-    if (macroCondition(dependencySatisfies('ember-source', '<=3.24.0'))) {
+    if (macroCondition(dependencySatisfies('ember-source', '~3.24.0'))) {
       console.log('<');
       console.log(find('div').innerHTML);
       console.log(find('div > div').innerHTML);
