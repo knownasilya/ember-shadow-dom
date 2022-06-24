@@ -17,13 +17,15 @@ module('Integration | Component | shadow-root', function (hooks) {
     // Ember classic that uses template-only-glimmer-components
     // No way to check if that feature is enabled https://github.com/pzuraq/ember-compatibility-helpers/issues/27
     if (macroCondition(dependencySatisfies('ember-source', '<=3.24.0'))) {
+      console.log(find('div > div'), find('div > div').shadowRoot);
       assert
         .dom('.block', find('div > div').shadowRoot)
-        .hasText('template block text');
+        .hasText('template block text', 'has text for <= 3.24');
     } else {
+      console.log(find('div'), find('div').shadowRoot);
       assert
         .dom('.block', find('div').shadowRoot)
-        .hasText('template block text');
+        .hasText('template block text', 'has text for > 3.24');
     }
   });
 
