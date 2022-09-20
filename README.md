@@ -136,6 +136,8 @@ Where the template looks like:
 </ShadowRoot>
 ```
 
+> Note: check out https://github.com/salesforce/kagekiri for piercing the shadow for querying elements
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
