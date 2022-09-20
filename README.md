@@ -14,8 +14,8 @@ you're used to.
 
 ## Compatibility
 
-- Ember.js v3.16 or above
-- Ember CLI v2.13 or above
+- Ember.js v3.24 or above
+- Ember CLI v3.24 or above
 - Node.js v12 or above
 
 If using Ember < 3.20, this addon will use the private version of `{{in-element}}` via a polyfill.
