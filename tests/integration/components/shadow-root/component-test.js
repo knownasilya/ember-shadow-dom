@@ -26,9 +26,11 @@ module('Integration | Component | shadow-root', function (hooks) {
     } else {
       console.log('>');
       console.log(find('div').innerHTML);
+      console.log(find('div').shadowRoot);
       console.log(find('div > div').innerHTML);
+      console.log(find('div > div').shadowRoot);
       assert
-        .dom('.block', find('div').shadowRoot)
+        .dom('.block', find('div > div').shadowRoot)
         .hasText('template block text', 'has text for > 3.24');
     }
   });
